@@ -1,0 +1,81 @@
+body {
+background-size: cover;
+width:100%;
+height: 100vh;
+overflow-y: hidden;
+overflow-x: hidden;
+cursor: crosshair;
+}
+
+.time {
+text-shadow: 2px 2px 5px white;
+position: absolute;
+top: 38%;
+left:50%;
+translate: -50% -50%;
+font-family: "Garamond";
+font-size: 65px;
+color: rgb(255,255,255);
+}
+
+
+input {
+border-radius: 24px;
+border: 2px solid rgb(255 255 255);
+background: transparent;
+display: flex;
+padding: 20px;
+z-index: 3;
+width: 638px;
+height: 44px;
+margin: 20px;
+position: absolute; 
+top: 49%;
+outline: none;
+box-shadow: 0 0 12px 2px rgb(255 255 255);
+caret-color: white;
+color: white;
+}
+
+::placeholder{
+color: rgb(255 255 255 / 90%);
+}
+
+input:hover{
+box-shadow: 0 0 13px 3px rgb(255 255 255);
+animation: bubble 0.5s ease-out;
+animation-fill-mode: forwards;
+}
+
+form {
+display: flex;
+justify-content: center;
+}
+
+button {
+background: transparent;
+border: 2px solid rgb(255 255 255);
+height: 82px;
+width: 82px;
+box-shadow: 0 0 12px 2px white;
+cursor: crosshair;
+border-radius: 20%;
+}
+
+@keyframes bubble {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(1.1);
+}
+100% {
+transform: scale(1.1);
+}
+}
+
+button:hover{
+animation: bubble 0.5s ease-out;
+animation-fill-mode: forwards;
+}
+
