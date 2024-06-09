@@ -20,10 +20,7 @@ function randomImage(){
   var size = images.length;
   var x = Math.floor(size * Math.random());
   document.body.style.backgroundImage = "url('"+ images[x] + "')";
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundPosition = "center";
-  document.body.style.backgroundAttachment = "fixed";
 }
-document.addEventListener("DOMContentLoaded", randomImage);
+document.addEventListener("DOMContentLoaded", randomImage());
 
 
