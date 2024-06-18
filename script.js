@@ -10,13 +10,7 @@ function randomImage(){
    'backgrounds/b2.jpg',
    'backgrounds/b3.jpg',
    'backgrounds/b4.jpg',
-   'backgrounds/b5.jpg',
-   'backgrounds/b6.jpg',
-   'backgrounds/b7.jpg',
-   'backgrounds/b8.jpg',
-   'backgrounds/b9.jpg',
-   'backgrounds/b10.jpg',
-   'backgrounds/b11.jpg'];
+   'backgrounds/b5.jpg'];
   var size = images.length;
   var x = Math.floor(size * Math.random());
   document.body.style.backgroundImage = "url('"+ images[x] + "')";
